@@ -1,0 +1,155 @@
+{
+    {
+        "event_name": "白金之星_Star Platinum",
+        "describe": "<0>：【白金之星 Star Platinum】！欧拉欧拉欧拉！！（击晕一回合并后退一侧的马10步）",
+        "target": 6,
+        "target_is_buff":"vertigo",
+        "rounds": 1,
+        "move": -10
+
+    },
+    {
+        "event_name": "世界_The World",
+        "describe": "<0>：【世界 The World】！木大木大木大！！（眩晕除自己以外的所有人10个回合）",
+        "target": 3,
+        "target_is_buff":"vertigo",
+        "rounds": 10
+
+    },
+    {
+        "event_name": "白金之星·世界_Star Platinum·The World",
+        "describe": "<0>：【白金之星·世界 Star Platinum·The World】！时间停止！欧拉欧拉欧拉！！(击晕十回合并后退一侧的马10步）",
+        "target": 6,
+        "target_is_buff":"vertigo",
+        "rounds": 10,
+        "move": -10,
+        }
+    },
+    {
+        "event_name": "黄金体验_Gold Experience",
+        "describe": "<0>：【黄金体验 Gold Experience】！木大木大木大！！（复活并眩晕一名两个回合，且后退三步）",
+        "target": 1,
+        "other_buff":["live","vertigo"],
+        "rounds": 2,
+        "move": -3
+    
+        
+
+    },
+    {
+        "event_name": "紫色隐者_Hermit Purple",
+        "describe": "<0>：【紫色隐者 Hermit Purple】！<1>你的下一句是……！！（将自己和任意一人互换位置）",
+        "target": 1,
+        "target_is_buff":"track_ exchange_ location"
+
+    },
+    {
+        "event_name": "石之自由_Stone Free",
+        "describe": "<0>：【石之自由 Stone Free】！欧拉欧拉欧拉！！",
+        "target": 1,
+        "delay_event":[3,{
+            "event_name": "石之自由_Stone Free",
+            "describe": "【石之自由 Stone Free】_（将另两人互换位置）",
+            "target": 1
+        }]
+
+    },
+    {
+        "event_name": "疯狂钻石_Crazy Diamond",
+        "describe": "<0>：【疯狂钻石 Crazy Diamond】！救回<1>！！（下回合复活并解除眩晕）",
+        "target": 4,
+        "del_buff": "away",
+        "del_buff": "vertigo",
+        "delay_event_self": [3, {
+            "event_name": "疯狂钻石”_Crazy Diamond",
+            "describe": "<0>：【疯狂钻石 Crazy Diamond】！嘟啦嘟啦嘟啦！！（退后3步）",
+            "target": 1,
+            "move": -3
+        }]
+    
+        
+
+    },
+    {
+        "event_name": "杀手皇后_Killer Queen_第1-3爆弹",
+        "target": 1,
+        "describe":"<0>:杀手皇后 Killer Queen！我的名字叫<0>，33岁。住在杜王町东北部的别墅区一带，未婚。我在龟友连锁店服务。每天都要加班到晚上8点才能回家。我不抽烟，酒仅止于浅尝。晚上11点睡，每天要睡足8个小时。睡前，我一定喝一杯温牛奶，然后做20分钟的柔软操，上了床，马上熟睡。一觉到天亮，决不把疲劳和压力，留到第二天。医生都说我很正常。",
+        "random_event_once": [
+            [120, {
+                "event_name": "第一爆弹",
+                "describe": "第一炸弹！（一侧人后退一步）",
+                "target": 6,
+                "move": -1
+                }
+            ],
+            [80, {
+                "event_name": "第二爆弹",
+                "describe": "第二炸弹！枯萎穿心攻击！（一个人后退5步）",
+                "target": 1,
+                "move": -5
+            }
+            ],
+            [40, {
+                "event_name": "第三爆弹",
+                "describe": "第三炸弹！败者食尘！发动！(一人死亡）",
+                "target": 1,
+                "die": 1
+            }
+            ]
+          ]
+        },
+        {
+            "event_name": "绯红之王_King Crimson",
+            "describe": "<0>：【绯红之王 King Crimson】！帝王是我<0>哒！地位依然没有改变！！",
+            "target": 1,
+            "target_is_buff":"track_ exchange_ location",
+            "die": 1
+
+        
+            
+    
+        },
+        {
+            "event_name": "新月_C-Moon",
+            "target": 3,
+            "describe":"<0>:新月_C-Moon！现在你们已经杀不死我了！",
+            "random_event_once": [
+                [50, {
+                    "event_name": "滚前面去！",
+                    "describe": "往前推（除<0>之外的所有人前进5步）",
+                    "target": 3,
+                    "move": 5
+                    }
+                ],
+                [50, {
+                    "event_name": "不准越界！",
+                    "describe": "往后退（除<0>之外的所有人后退5步）",
+                    "target": 3,
+                    "move": -5
+                }
+                ]
+              ]
+            },
+            {
+                "event_name": "天堂制造_Made In Heaven",
+                "target": 3,
+                "describe":"<0>:螺旋阶梯→独角仙→废墟街道→无花果塔→独角仙→苦伤道→独角仙→特异点→乔托→天使→绣球花→独角仙→特异点→秘密皇帝！天堂制造_Made In Heaven！",
+                "random_event_once": [
+                    [50, {
+                        "event_name": "进入新宇宙",
+                        "describe": "往前推（除<0>之外的所有人前进100步）",
+                        "target": 3,
+                        "move": 100
+                        }
+                    ],
+                    [50, {
+                        "event_name": "回归最初点",
+                        "describe": "往后退（除<0>之外的所有人后退100步）",
+                        "target": 3,
+                        "move": -100
+                    }
+                    ]
+                  ]
+                },
+
+}
