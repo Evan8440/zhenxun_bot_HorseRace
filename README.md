@@ -7,7 +7,9 @@
 
 真寻安装是请将该插件下载并将nonebot_plugin_htmlrender与HorseRace放于同一插件目录
 
-以下指令请在poetry shell   # 进入虚拟环境后运行
+nonebot_plugin_htmlrender在真寻中缺失依赖为 markdown 和 Jinja2
+
+安装方式：以下指令请在poetry shell   # 进入虚拟环境后运行
 
 pip3 install markdown
 
