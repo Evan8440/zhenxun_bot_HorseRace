@@ -1,7 +1,7 @@
 # Zhenxun_bot_HorseRace
 适配真寻的赛马小插件，支持自定义事件
 
-首先感谢[heerkaisair](https://gitee.com/heerkaisair/horse-race-ami/)及其项目提供的帮助（哦，我的上帝这玩意怎么要.Net 4.8，还不是python的）
+首先感谢[赫尔不是中二病](https://gitee.com/heerkaisair/horse-race-ami/)及其项目提供的帮助（哦，我的上帝这玩意怎么要.Net 4.8，还不是python的）
 
 然后就写了这个赛马-青春版-真寻专用版  
 
