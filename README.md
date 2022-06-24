@@ -41,10 +41,12 @@ pip3 install Jinja2
 事件详细模板.txt
 
 ### 给此项目 上传事件包
+进入events目录，将事件包内容整个复制进去后，确认并提交pr
+
 ![3~}A`0{P7%DCBC X2KV5~)B](https://user-images.githubusercontent.com/108109327/175483369-1fccb3d6-b82e-4299-9ecb-21aa576c4c17.png)
-将事件包内容整个复制进去后
+
 ![image](https://user-images.githubusercontent.com/108109327/175483630-5cee9121-559b-4332-8908-1fabb6ce73e3.png)
-确认并提交pr
+
 ![image](https://user-images.githubusercontent.com/108109327/175483871-7d822294-1fef-4b14-9221-031d0da678d6.png)
 
 ![image](https://user-images.githubusercontent.com/108109327/175483676-6ec142cc-caf5-45fb-8c6b-746b4d8232cb.png)
