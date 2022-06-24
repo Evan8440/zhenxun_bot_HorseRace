@@ -1,6 +1,10 @@
 # Zhenxun_bot_HorseRace
 适配真寻的赛马小插件，支持自定义事件
 
+首先感谢[heerkaisair](https://gitee.com/heerkaisair/horse-race-ami/)及其项目提供的帮助（哦，我的上帝这玩意怎么要.Net 4.8，还不是python的）
+
+然后就写了这个赛马-青春版-真寻专用版  
+
 插件依赖 [nonebot-plugin-htmlrender](https://github.com/kexue-z/nonebot-plugin-htmlrender) 插件来渲染图片，使用前需要检查 playwright 相关的依赖是否正常安装；同时为确保字体正常渲染，需要系统中存在中文字体
 
 ### 真寻bot的插件安装方式
