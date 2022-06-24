@@ -2,24 +2,17 @@
 from .setting import  *
 
 class horse:
-    horse = "the_horse"
-    playeruid = 114514
-    player =  "the_player"
-    buff = []
-    delay_events = []
-    horse_fullname = f"full_horse_name"
-    round = 0
-    location = 0
-    location_add = 0
-    location_add_move = 0
     def __init__(self, horsename = "the_horse", uid = 114514, id = "the_player", location = 0, round = 0 ):
         self.horse = horsename
-        self.horse_fullname = horsename
         self.playeruid = uid
         self.player =  id
         self.buff = []
+        self.delay_events = []
+        self.horse_fullname = horsename
         self.round = round
         self.location = location
+        self.location_add = 0
+        self.location_add_move = 0
     def __del__(self):
         del buff
         del delay_events
@@ -34,15 +27,19 @@ class horse:
         self.round = horse_to.round
         self.location = horse_to.location
         self.location_add = horse_to.location_add
+        self.location_add_move = horse_to.location_add_move
 #=====替换为其他马,指定数据（用于天灾马系列事件）
     def replace_horse_ex(self, horsename = "the_horse", uid = 114514, id= "the_player"):
         self.horse = horsename
-        self.horse_fullname = horsename
         self.playeruid = uid
         self.player =  id
         self.buff = []
         self.delay_events = []
+        self.horse_fullname = horsename
+        self.round = round
+        self.location = location
         self.location_add = 0
+        self.location_add_move = 0
 #=====马儿buff增加：buff为list格式
     def add_buff(self, buff_name, round_start, round_end, buffs, move_min = 0, move_max = 0, event_in_buff = []):
         if  move_min > move_max:
@@ -128,7 +125,7 @@ class horse:
                 self.location_add -= self.location - setting_track_length
                 self.location = setting_track_length
             if self.location < 0:
-                self.location_add += self.location - setting_track_length
+                self.location_add -= self.location
                 self.location = 0
 #=====马儿移动量计算：
     def move(self):

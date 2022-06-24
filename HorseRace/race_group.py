@@ -6,14 +6,13 @@ from .events_main import event_main
 from .setting import  *
 
 class race_group:
-    player = []
-    round = 0
-    start = 0
-    time = 114514
-    race_only_keys = []
 #初始化
     def __init__(self):
+        self.player = []
+        self.round = 0
+        self.start = 0
         self.time = time.time()
+        self.race_only_keys = []
         pass
     def __del__(self):
         max = len(self.player)
