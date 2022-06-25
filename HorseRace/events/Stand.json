@@ -5,14 +5,16 @@
         "target": 6,
         "vertigo": 1,
         "rounds": 1,
-        "move": -10
+        "move": -10,
+        "name"："击晕"
     },
     {
         "event_name": "世界_The World",
         "describe": "<0>世界_The World（眩晕除自己以外的所有人10个回合）",
         "target": 3,
         "vertigo": 1,
-        "rounds": 10
+        "rounds": 10,
+        "name"："击晕"
     },
     {
         "event_name": "白金之星·世界_Star Platinum·The World",
@@ -21,6 +23,7 @@
         "vertigo": 1,
         "rounds": 10,
         "move": -10 
+        "name"："击晕且后退"
     },
     {
         "event_name": "黄金体验_Gold Experience",
@@ -28,7 +31,8 @@
         "target": 1,
         "other_buff":["live","vertigo"],
         "rounds": 2,
-        "move": -3
+        "move": -3,
+        "name"："复活、击晕且后退"
     },
     {
         "event_name": "紫色隐者_Hermit Purple",
@@ -57,7 +61,8 @@
             "event_name": "疯狂钻石”_Crazy Diamond",
             "describe": "疯狂钻石_Crazy Diamond（三回合后使一个随机目标退后3步）",
             "target": 1,
-            "move": -3
+            "move": -3,
+            "name"："后退"
         }]
     },
     {
@@ -69,21 +74,24 @@
                 "event_name": "第一爆弹",
                 "describe": "杀手皇后 Killer Queen第一炸弹！（一侧人后退一步）",
                 "target": 6,
-                "move": -1
+                "move": -1,
+                "name"："后退"
                 }
             ],
             [80, {
                 "event_name": "第二爆弹",
                 "describe": "杀手皇后 Killer Queen第二炸弹！枯萎穿心攻击！（一个人后退5步）",
                 "target": 1,
-                "move": -5
+                "move": -5,
+                "name"："后退"
             }
             ],
             [120, {
                 "event_name": "第三爆弹",
                 "describe": "杀手皇后 Killer Queen第三炸弹！败者食尘！发动！(一人死亡）",
                 "target": 1,
-                "die": 1
+                "die": 1,
+                "name"："死亡"
             }
             ]
           ]
@@ -93,7 +101,8 @@
             "describe": "<0>：【绯红之王 King Crimson】！帝王是我<0>哒！",
             "target": 1,
             "track_ exchange_ location":1,
-            "die": 1
+            "die": 1,
+            "name"："死亡"
         },
         {
             "event_name": "新月_C-Moon",
@@ -104,14 +113,16 @@
                     "event_name": "滚前面去！",
                     "describe": "往前推（除<0>之外的所有人前进5步）",
                     "target": 3,
-                    "move": 5
+                    "move": 5,
+                    "name"："前进"
                     }
                 ],
                 [100, {
                     "event_name": "不准越界！",
                     "describe": "往后退（除<0>之外的所有人后退5步）",
                     "target": 3,
-                    "move": -5
+                    "move": -5,
+                    "name"："后退"
                 }
                 ]
               ]
@@ -123,16 +134,18 @@
                 "random_event_once": [
                     [50, {
                         "event_name": "进入新宇宙",
-                        "describe": "往前推（除<0>之外的所有人前进100步）",
+                        "describe": "进入新宇宙（除<0>之外的所有人前进100步）",
                         "target": 3,
-                        "move": 100
+                        "move": 100,
+                        "name"："前进"
                         }
                     ],
                     [100, {
                         "event_name": "回归最初点",
-                        "describe": "往后退（除<0>之外的所有人后退100步）",
+                        "describe": "回归最初点（除<0>之外的所有人后退100步）",
                         "target": 3,
-                        "move": -100
+                        "move": -100,
+                        "name"："后退"
                     }
                     ]
                   ]
