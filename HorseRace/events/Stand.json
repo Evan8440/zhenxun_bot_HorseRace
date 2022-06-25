@@ -6,7 +6,6 @@
         "vertigo": 1,
         "rounds": 1,
         "move": -10
-
     },
     {
         "event_name": "世界_The World",
@@ -14,7 +13,6 @@
         "target": 3,
         "vertigo": 1,
         "rounds": 10
-
     },
     {
         "event_name": "白金之星·世界_Star Platinum·The World",
@@ -22,8 +20,7 @@
         "target": 6,
         "vertigo": 1,
         "rounds": 10,
-        "move": -10,
-        }
+        "move": -10 
     },
     {
         "event_name": "黄金体验_Gold Experience",
@@ -32,16 +29,12 @@
         "other_buff":["live","vertigo"],
         "rounds": 2,
         "move": -3
-    
-        
-
     },
     {
         "event_name": "紫色隐者_Hermit Purple",
         "describe": "（将自己和任意一人互换位置）",
         "target": 1,
         "track_ exchange_ location": 1
-
     },
     {
         "event_name": "石之自由_Stone Free",
@@ -53,7 +46,6 @@
             "target": 1,
             "track_ exchange_ location": 1
         }]
-
     },
     {
         "event_name": "疯狂钻石_Crazy Diamond",
@@ -67,9 +59,6 @@
             "target": 1,
             "move": -3
         }]
-    
-        
-
     },
     {
         "event_name": "杀手皇后_Killer Queen_第1-3爆弹",
@@ -105,10 +94,6 @@
             "target": 1,
             "track_ exchange_ location":1,
             "die": 1
-
-        
-            
-    
         },
         {
             "event_name": "新月_C-Moon",
@@ -151,6 +136,6 @@
                     }
                     ]
                   ]
-                },
+                }
 
 ]
