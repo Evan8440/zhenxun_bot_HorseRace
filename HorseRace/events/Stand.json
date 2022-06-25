@@ -50,7 +50,8 @@
         "delay_event":[3,{
             "event_name": "石之自由_Stone Free",
             "describe": "（将此目标在三回合后与第一名互换位置）",
-            "target": 1
+            "target": 1,
+            "track_ exchange_ location": 1
         }]
 
     },
