@@ -79,7 +79,7 @@
     "describe":"<0>觉得我命有我不由天，",
     "random_event_once": [[15, {
             "event_name": "我命有我不由天-终点",
-            "describe": "快速冲到了起点",
+            "describe": "快速冲到了终点",
             "target": 0,
             "move": 100
             }
