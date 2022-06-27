@@ -4,6 +4,7 @@
 
 2022.06.24：修正了跨群赛马的问题
 
+2022.06.27：（Windows的python默认是gbk），现强制读取格式为utf-8
 
 # Zhenxun_bot_HorseRace
 适配真寻的赛马小插件，支持自定义事件
