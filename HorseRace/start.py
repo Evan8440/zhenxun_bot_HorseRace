@@ -9,7 +9,7 @@ async def load_dlcs():
     files = os.listdir(os.path.dirname(__file__) + '/events')
     for file in files:
         try:
-            with open(f'{os.path.dirname(__file__)}/events/{file}', "r") as f:
+            with open(f'{os.path.dirname(__file__)}/events/{file}', "r", encoding="utf-8") as f:
                 logger.info(f'加载事件文件：{file}')
                 events = deal_events(json.load(f))
                 events_list.extend(events)
