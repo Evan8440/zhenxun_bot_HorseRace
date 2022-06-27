@@ -13,9 +13,6 @@ class horse:
         self.location = location
         self.location_add = 0
         self.location_add_move = 0
-    def __del__(self):
-        del buff
-        del delay_events
 # =====替换为其他马,指定马（没用上，暂留）
     def replace_horse(self, horse_to):
         self.horse = horse_to.horse
