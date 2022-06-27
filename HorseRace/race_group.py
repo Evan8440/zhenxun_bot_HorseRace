@@ -13,12 +13,6 @@ class race_group:
         self.start = 0
         self.time = time.time()
         self.race_only_keys = []
-        pass
-    def __del__(self):
-        max = len(self.player)
-        for i in range(0, max):
-            del self.player[0]
-        del race_only_keys
 #start指示器变更 0为马儿进场未开始，1为开始，2为暂停（测试用）
     def start_change(self, key):
         self.start = key
