@@ -524,6 +524,7 @@
             "event_name": "明天周末",
             "target": 2,
             "describe":"明天周末，不睡觉！（速度变为6持续2回合，但2回合之后眩晕5回合）",
+            "name":"周末！",
             "move_max":6,
             "move_min":6,
             "rounds":2,
