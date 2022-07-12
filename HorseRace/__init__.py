@@ -94,6 +94,14 @@ async def _(bot: Bot, event: GroupMessageEvent, arg: Message = CommandArg()):
         horse_name = msg
     else:
         await RaceJoin.finish(f"请输入你的马儿名字", at_sender=True)
+    if race[group].is_horse_in(msg) == True:
+        await RaceJoin.finish( f"> 加入失败\n> 原因:有一匹同名的马儿加入了赛马场!")
+    if len(msg) > name_max_len:
+        await RaceJoin.finish(f'> 加入失败\n> 原因:马儿名字太长了\n> 不可以超过{name_max_len}个字哦')
+    if msg[:1] == f'.':
+        await RaceJoin.finish(f'> 加入失败\n> 原因:马儿名字不可以用“.”开头哦')
+    if msg[len(msg) - 1:] == f'.':
+        await RaceJoin.finish(f'> 加入失败\n> 原因:马儿名字不可以用“.”结尾哦')
     race[group].add_player(horse_name, uid, player_name)
     out_msg = f'> 加入赛马成功\n> 赌上马儿性命的一战即将开始!\n> 赛马场位置:{str(race[group].query_of_player())}/{str(max_player)}'
     await RaceJoin.finish(out_msg, at_sender=True)
