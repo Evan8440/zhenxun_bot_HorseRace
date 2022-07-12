@@ -28,6 +28,12 @@ class race_group:
             if self.player[i].playeruid == uid:
                 return True
         return False
+#查找有无同名马
+    def is_horse_in(self, name):
+        for i in range(0, len(self.player)):
+            if self.player[i].horse == name:
+                return True
+        return False
 #回合开始，回合数+1
     def round_add(self):
         self.round += 1
