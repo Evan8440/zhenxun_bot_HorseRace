@@ -3,6 +3,7 @@ import math
 import time
 import json
 import os
+import asyncio
 from nonebot import on_command
 from nonebot.adapters.onebot.v11 import Bot, GroupMessageEvent, MessageEvent, Message, MessageSegment
 from nonebot.permission import SUPERUSER
@@ -135,7 +136,7 @@ async def _(bot: Bot, event: GroupMessageEvent, arg: Message = CommandArg()):
         display += race[group].display()
         logger.info(f'事件输出:\n {display}')
         await RaceStart.send(MessageSegment.image(await text_to_pic(display, None, 300)))
-        time.sleep(2)
+        await asyncio.sleep(2)
 #全员失败计算
         if race[group].is_die_all():
             del race[group]
@@ -144,11 +145,11 @@ async def _(bot: Bot, event: GroupMessageEvent, arg: Message = CommandArg()):
         winer = race[group].is_win_all()
         if winer != f"":
             await RaceStart.send(f'> 比赛结束\n> 赫尔正在为您生成战报...')
-            time.sleep(2)
+            await asyncio.sleep(2)
             del race[group]
             msg = "比赛已结束，胜者为：" + winer
             await RaceStart.finish(msg)
-        time.sleep(4)
+        await asyncio.sleep(4)
 
 @RaceReStart.handle()
 async def _(bot: Bot, event: MessageEvent, arg: Message = CommandArg()):
