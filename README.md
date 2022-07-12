@@ -1,4 +1,5 @@
 最新更新：
+2022.07.12： 延时函数time.sleep 换成 await asyncio.sleep
 
 2022.06.24：更正事件文件为utf-8格式，更正读取格式为utf-8
 
