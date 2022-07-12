@@ -27,8 +27,8 @@ usage：
 """.strip()
 __plugin_des__ = "真寻小赌场-赛马场"
 __plugin_cmd__ = ["赛马创建/加入[名称]/开始"]
-__plugin_type__ = ("真寻小赌场",)
-__plugin_version__ = 2.0
+__plugin_type__ = ("群内小游戏",)
+__plugin_version__ = 2.1
 __plugin_author__ = "冥乐"
 __plugin_settings__ = {
     "level": 5,
