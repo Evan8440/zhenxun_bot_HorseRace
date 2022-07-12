@@ -17,3 +17,6 @@ setting_over_time = 120
 
 #事件概率 = event_rate / 1000
 event_rate = 450
+
+#马儿名字最大长度
+name_max_len = 8
