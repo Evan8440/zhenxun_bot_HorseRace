@@ -7,7 +7,6 @@
 
 2022.06.24：修正了跨群赛马的问题
 
-2022.06.27：（Windows的python默认是gbk），现强制读取格式为utf-8
 
 # Zhenxun_bot_HorseRace
 适配真寻的赛马小插件，支持自定义事件
@@ -21,6 +20,8 @@
 ### 真寻bot的插件安装方式
 
 真寻安装是请将该插件下载并将nonebot_plugin_htmlrender与HorseRace放于同一插件目录
+
+P.S.(nonebot_plugin_htmlrender_main里有个文件夹叫nonebot_plugin_htmlrender，别再问为啥依赖装了但是还是依赖报错了，天天都有人问这个问题)
 
 nonebot_plugin_htmlrender在真寻中缺失依赖为 markdown 和 Jinja2
 
