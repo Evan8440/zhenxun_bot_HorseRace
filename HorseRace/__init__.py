@@ -60,10 +60,13 @@ async def _(bot: Bot, event: GroupMessageEvent, arg: Message = CommandArg()):
     group = event.group_id
     try:
         if race[group].start == 0 and time.time() - race[group].time < 300:
-            out_msg = f'> 创建赛马比赛失败!\n> 原因:赫尔正在打扫赛马场...\n> 解决方案:等赫尔打扫完...\n> 可以在{str(setting_over_time - time.time() + race[group].time)}秒后输入 赛马重置'
+            over_time = math.ceil(time.time() - race[group].time)
+            out_msg = f'> 创建赛马比赛失败!\n> 原因:赛马已经创建\n> 解决方案:创不起就加入...\n> 也可以输入“赛马重置”'
+            if over_time < setting_over_time:
+                out_msg = f'> 创建赛马比赛失败!\n> 原因:赛马已经创建\n> 解决方案:创不起就加入...\n> 也可以在{str(setting_over_time - over_time)}秒后输入 赛马重置'
             await RaceNew.finish(out_msg)
         elif race[group].start == 1 :
-            await RaceNew.finish(f"一场赛马正在进行中")
+            await RaceNew.finish(f"> 创建赛马比赛失败！一场赛马正在进行中\n> 如赛马已经卡死，请在超时后输入“赛马重置”")
             await RaceNew.finish()
     except KeyError:
         pass
